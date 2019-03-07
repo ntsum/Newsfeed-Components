@@ -16,18 +16,18 @@ In this project we are going to be building a news feed reader. The goal is to h
 
 **Follow these steps to set up and work on your project:**
 
-* [ ] Create a forked copy of this project.
-* [ ] Add your project manager as collaborator on Github.
-* [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-* [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-* [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-* [ ] Push commits: git push origin `<firstName-lastName>`.
+* [x] Create a forked copy of this project.
+* [x] Add your project manager as collaborator on Github.
+* [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+* [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+* [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+* [x] Push commits: git push origin `<firstName-lastName>`.
 
 **Follow these steps for completing your project.**
 
-* [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-* [ ] Add your project manager as a reviewer on the pull-request
-* [ ] Your project manager will count the project as complete by merging the branch back into master.
+* [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+* [x] Add your project manager as a reviewer on the pull-request
+* [x] Your project manager will count the project as complete by merging the branch back into master.
 
 ### Preprocessor Setup
 
@@ -36,16 +36,17 @@ In this project we are going to be building a news feed reader. The goal is to h
 
 
 ### Part 1: The Menu
-
+[X]
 * Import `Menu.less` from the correct path into index.less (follow the example for `Header.less` if you’re not sure how to write the correct path)
 * Follow the instructions found in the Menu.js file to complete the JavaScript functionality.  NOTE: Start near the bottom of the page by looking for `const menu`.
 
 ### Part 2: The Articles Component
+[X]
 * Import `Article.less` from the correct path into index.less (follow the example for `Header.less` if you’re not sure how to write the correct path)
 * Follow the instructions found in the Articles.js file to complete the JavaScript functionality.  NOTE: Start near the bottom of the page by looking for `let articles`.
 
 ### Part 3: Add Articles
-
+[X]
 * Now that we have our components built, add a few articles of your own to the HTML. Notice how our JavaScript code automatically selects the new articles and adds the styling and functionality we just built to them. This is the power of components. Write the code once and add as many components as you want all while maintaining the functionality we built!
 
 ### Stretch Goals:
@@ -53,7 +54,7 @@ In this project we are going to be building a news feed reader. The goal is to h
 If you complete the main goals of the page let's play around with some cool animation libraries.
 
 A few things to check out: 
-* Native CSS Animations. 
+* Native CSS Animations. [X]
   * CSS has the ability to animate elements using a number of different properties. Check out `transform` and `transition`, and `animate`. A word of warning, these CSS properties will act differently on different browsers, so always read and see if you need a `browser prefix` in order to animate properly. 
   * https://css-tricks.com/almanac/properties/a/animation/
 * jQuery
@@ -70,7 +71,7 @@ Note: Just a reminder the stretch goals are just extra practice using the tools 
   * Animation Goal #2 Animate the article opening. This one is a bit trickier. You will need to change the CSS for this component as well. Animate the component so that it slides open and slides closed on each click. Update the text in the expand button to read `'Click to Expand'` or `'Click to Close'` depending on the state of the article. 
 
 * Close Button
-
+[x]
   Add a close (or 'read') button to each Article component. When clicked the article will disappear.
 
 * Component Constructor

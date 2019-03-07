@@ -34,6 +34,77 @@
 .header h1 {
   margin: 0;
   font-size: 48px;
+  color: gray;
+}
+.menu-button {
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+}
+.menu {
+  display: none;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  width: 350px;
+  height: 100vh;
+  /* This give the height 100% of the screen or, '100% of View Height' */
+  background-color: #81C784;
+  border: 1px solid #004D40;
+  border-left: none;
+  border-bottom: none;
+  z-index: 2;
+  /* This set the layer level of the element, it has precendence over initial level of 1*/
+}
+.menu ul li {
+  list-style-type: none;
+  font-size: 32px;
+  padding: 30px 0;
+  text-align: center;
+}
+.menu--open {
+  display: block;
+}
+.articles {
+  margin-top: 95px;
+}
+.article {
+  margin: 20px 10%;
+  padding: 0 20px 25px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  background-color: #EEFEFD;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px lightgrey;
+}
+.article h2 {
+  font-size: 28px;
+  padding: 0;
+  margin: 15px 0 0;
+}
+.article .date {
+  margin: 0;
+  font-size: 14px;
+}
+.article .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.article .expandButton {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 12px;
+  color: grey;
+  cursor: pointer;
+  transform: translate(-50%);
+  background-color: #EEFEFD;
+}
+.article-open {
+  height: 400px;
 }
 html,
 body {
@@ -41,4 +112,63 @@ body {
   padding: 0;
   font-family: 'Roboto';
   background-color: #fffef7;
+  color: gray;
+}
+
+.header {
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #FEF9FC;;
+  }
+  100% {
+    background-color: #EEFEFD;
+  }
+}
+
+h1 {
+
+  animation: 
+    nudge 5s linear infinite alternate;
+  
+}
+
+
+@keyframes nudge {
+  0% {
+    transform: translate(0, 0);
+  }
+  
+  100% {
+    transform: translate(-400px, 0);
+  }
+}
+
+.menu {
+  margin: 0 auto;
+  animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    background-color: #FEF9FC;
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: #EEFEFD;
+  }
+}
+
+.music {
+  margin-left: 40%;
 }
